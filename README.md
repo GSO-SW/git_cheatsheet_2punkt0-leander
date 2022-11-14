@@ -46,3 +46,10 @@ In diesem Repo soll zusammengefasst werden, was man für die Arbeit mit git und 
  - `git init`: Mit diesem Befehl initialisiert man eine neue Repository im aktuellen Verzeichnis
  - `git branch`: Ruft alle branches ab, die in der aktuellen Repo enthalten sind
  - `git add`: Mit diesem Befehl fügt man geänderte dateien aus dem Working-Tree zum Index hinzu
+ - `git log`: Zeigt alle vergangenen commits im aktuellen branch an
+ - `git checkout`: Verlässt den aktuellen branch
+
+## Git Befehle für die Arbeit mit entfernten Repositorys
+ - `git fetch`: Sucht nach allen Änderungen im Origin und zeigt diese an. Aktualisiert also alle Informationen zum Origin
+ - `git push`: Fügt alle commits vom aktuellen branch zur Repo des aktuellen branches hinzu
+ - `git pull`: Nimmt alle Änderungen im Origin und schreibt diese in die Repo im aktuellen branch
