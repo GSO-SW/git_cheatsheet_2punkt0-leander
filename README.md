@@ -68,13 +68,15 @@ In diesem Repo soll zusammengefasst werden, was man für die Arbeit mit git und 
    Diese member müssen jedoch bei jeder Vererbung ersten Grades eine Implementierung via `override` erhalten
 
 ## Was macht der `virtual`-Modifizierer in C#?
- - Der `virtual`-Modifizierer erlaubt neue Implementierung via `override` in Vererbungen aus alles Graden
+ - Der `virtual`-Modifizierer erlaubt eine neue Implementierung via `override` in Vererbungen aus allen Graden
  - Der `virtual`-Modifizierer ist nicht in versiegelten Klassen zulässig
 
 ## Was macht der `override`-Modifizierer in C#?
  - Der `override`-Modifizierer erstellt einen Member als neue Implementierung eines Member der Übergeordneten Klasse mit dem selben Namen
- - Falls der neu zu Implementierende Member nicht über die Modifizierer `virtual` oder `abstract` verfügt, ist die Überschreibung unzulässig.
-   In solchen Fällen, ist der Member mit dem `new`-Modifizierer zu Implementieren, um den selben Effekt zu erzielen
+ - Falls der neu zu Implementierende Member nicht über die Modifizierer `virtual`, `abstract` oder `override` verfügt, ist die Überschreibung unzulässig.
+   In solchen Fällen, oder in Fällen, wo der Member versiegelt ist,
+   ist der Member mit dem `new`-Modifizierer zu Implementieren, um den selben Effekt zu erzielen
+ - Member, welche mit `override` neu Implementiert wurden, darf man im Anschluss auch mit dem `sealed`-Modifizerer versiegeln
 
 ## Was bedeutet Polymorphismus in C#?
  - `Polymorphismus` bedeutet übersetzt, dass eine Sache mehrere Formen annehmen kann.
